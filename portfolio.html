@@ -834,7 +834,7 @@
             flex-wrap: wrap;
         }
 
-        .contact form .input-box input, .contact form textarea {
+        .contact form .input-box input, .contact form textarea, .contact form .input-subject {
             width: 100%;
             padding: 1rem;
             font-size: 1rem;
@@ -843,6 +843,15 @@
             border-radius: 0.8rem;
             margin: 0.7rem 0;
             border: 2px solid var(--accent-color);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact form .input-box input:focus, 
+        .contact form textarea:focus, 
+        .contact form .input-subject:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
         }
 
         .contact form .input-box input { width: 49%; }
