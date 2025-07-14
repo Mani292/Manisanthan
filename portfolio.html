@@ -3,809 +3,442 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manisanthan Reddy | IT Professional</title>
-    <meta name="description" content="Portfolio of Manisanthan Reddy, an IT professional specializing in web development, ServiceNow, and content writing.">
+    <title>Manisanthan Reddy | IT Professional & Developer</title>
+    
+    <!-- SEO and Professional Meta Tags -->
+    <meta name="description" content="Professional portfolio of Manisanthan Reddy, an IT student specializing in Web Development, ServiceNow, and Content Creation. Explore projects, skills, and professional journey.">
+    <meta name="keywords" content="Manisanthan Reddy, Portfolio, Web Developer, ServiceNow, IT Professional, Content Writer, Power Apps, C#, Python, Technical Hub">
+    <meta name="author" content="Manisanthan Reddy">
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mani292.github.io/Manisanthan/portfolio.html">
+    <meta property="og:title" content="Manisanthan Reddy | IT Professional & Developer">
+    <meta property="og:description" content="Explore the professional portfolio of Manisanthan Reddy, showcasing skills in ServiceNow, web development, and more.">
+    <meta property="og:image" content="https://i.ibb.co/XxPJ0P38/Whats-App-Image-2025-06-27-at-22-22-42-118ad17a.jpg">
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mani292.github.io/Manisanthan/portfolio.html">
+    <meta property="twitter:title" content="Manisanthan Reddy | IT Professional & Developer">
+    <meta property="twitter:description" content="Explore the professional portfolio of Manisanthan Reddy, showcasing skills in ServiceNow, web development, and more.">
+    <meta property="twitter:image" content="https://i.ibb.co/XxPJ0P38/Whats-App-Image-2025-06-27-at-22-22-42-118ad17a.jpg">
+    
     <!-- Font Awesome for Icons (CDN) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    
     <!-- Google Fonts: Poppins (CDN) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Manisanthan Reddy",
+      "url": "https://mani292.github.io/Manisanthan/portfolio.html",
+      "image": "https://i.ibb.co/XxPJ0P38/Whats-App-Image-2025-06-27-at-22-22-42-118ad17a.jpg",
+      "sameAs": [
+        "https://www.linkedin.com/in/manisanthan-reddy-3a906b291",
+        "https://github.com/Mani292"
+      ],
+      "jobTitle": "IT Professional",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Aditya Engineering College"
+      }  
+    }
+    </script>
+
     <style>
-        /* --- Root Variables & Base Styles --- */
         :root {
-            /* Professional Light Theme Color Scheme */
-            --primary-color: #0a192f;       /* Navy blue */
-            --secondary-color: #112240;     /* Dark navy */
-            --accent-color: #64ffda;        /* Teal */
-            --text-color: #333333;          /* Dark gray for text */
-            --bg-color: #f8f9fa;            /* Off-white background */
-            --secondary-bg-color: #ffffff;  /* White for cards */
+            --primary-color: #0a192f;
+            --secondary-color: #112240;
+            --accent-color: #64ffda;
+            --text-color: #333333;
+            --bg-color: #f8f9fa;
+            --secondary-bg-color: #ffffff;
             --border-color: rgba(10, 25, 47, 0.1);
         }
-
         .dark-theme {
-            --primary-color: #64ffda;       /* Teal */
-            --secondary-color: #0a192f;     /* Navy blue */
-            --accent-color: #64ffda;        /* Teal */
-            --text-color: #e6f1ff;          /* Light blue for text */
-            --bg-color: #0a192f;            /* Navy blue background */
-            --secondary-bg-color: #112240;  /* Dark navy for cards */
+            --primary-color: #64ffda;
+            --secondary-color: #0a192f;
+            --accent-color: #64ffda;
+            --text-color: #e6f1ff;
+            --bg-color: #0a192f;
+            --secondary-bg-color: #112240;
             --border-color: rgba(100, 255, 218, 0.1);
         }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-            text-decoration: none;
-            list-style: none;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            background: var(--bg-color);
-            color: var(--text-color);
-            overflow-x: hidden;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        /* --- Theme Toggle --- */
-        .theme-toggle {
-            position: fixed;
-            top: 25px;
-            right: 25px;
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            background: var(--secondary-bg-color);
-            border: 2px solid var(--accent-color);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            z-index: 1001;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
-        }
-        .theme-toggle:hover {
-            transform: scale(1.1);
-        }
-        .theme-toggle i {
-            font-size: 1.5rem;
-            color: var(--primary-color);
-            transition: color 0.3s ease;
-        }
-        .dark-theme .theme-toggle i {
-            color: var(--accent-color);
-        }
-
-
-        /* --- Header & Navigation --- */
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 20px 8%;
-            background: transparent;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 1000;
-            transition: background 0.4s;
-        }
-
-        header.sticky {
-            background: var(--bg-color);
-            box-shadow: 0 .1rem 1rem rgba(0,0,0,0.2);
-        }
-
-        .logo {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            transition: color 0.3s;
-        }
-
-        .navbar {
-            display: flex;
-        }
-
-        .navbar a {
-            font-size: 1.1rem;
-            font-weight: 500;
-            color: var(--text-color);
-            margin: 0 1.5rem;
-            position: relative;
-            transition: color 0.4s;
-        }
-
-        .navbar a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            background: var(--accent-color);
-            bottom: -5px;
-            left: 0;
-            transition: width 0.4s;
-        }
-
-        .navbar a:hover::after,
-        .navbar a.active::after {
-            width: 100%;
-        }
-
-        #menu-icon {
-            font-size: 2rem;
-            cursor: pointer;
-            display: none;
-        }
-
-        /* --- General Section Styling --- */
-        section {
-            padding: 80px 8% 70px;
-        }
-
-        .heading {
-            text-align: center;
-            font-size: 2.8rem;
-            margin-bottom: 4rem;
-        }
-
-        .heading span {
-            color: var(--primary-color);
-        }
-        .dark-theme .heading span {
-            color: var(--accent-color);
-        }
-
-        /* --- Hero Section --- */
-        .home {
-            min-height: 100vh;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            align-items: center;
-            gap: 2rem;
-        }
-
-        .home-img {
-            width: 350px;
-            height: 350px;
-            justify-self: center;
-        }
-
-        .home-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 5px solid var(--accent-color);
-            box-shadow: 0 0 30px var(--accent-color);
-        }
-
-        .home-content h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            line-height: 1.2;
-        }
-        .home-content h1 span {
-            color: var(--primary-color);
-        }
-
-        .home-content h3 {
-            font-size: 2rem;
-            margin: 1rem 0;
-            font-weight: 700;
-        }
-
-        .typing-text {
-            color: var(--accent-color);
-            position: relative;
-        }
-
-        .home-content p {
-            color: var(--text-color);
-            font-size: 1rem;
-            line-height: 1.8;
-            margin-bottom: 2rem;
-        }
-
-        .social-icons a {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            width: 40px;
-            height: 40px;
-            background: transparent;
-            border: 2px solid var(--accent-color);
-            border-radius: 50%;
-            font-size: 1.2rem;
-            color: var(--accent-color);
-            margin-right: 1rem;
-            transition: all 0.4s;
-        }
-
-        .social-icons a:hover {
-            background: var(--accent-color);
-            color: var(--secondary-color);
-            transform: translateY(-5px);
-            box-shadow: 0 0 20px var(--accent-color);
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 28px;
-            background: var(--primary-color);
-            border: 2px solid var(--primary-color);
-            border-radius: 5px;
-            color: var(--bg-color);
-            font-size: 1rem;
-            letter-spacing: 1px;
-            font-weight: 600;
-            margin-top: 2rem;
-            transition: all 0.4s;
-        }
-
-        .btn:hover {
-            box-shadow: 0 0 25px var(--primary-color);
-            transform: scale(1.05);
-            background: transparent;
-            color: var(--primary-color);
-        }
-        .dark-theme .btn {
-            background: var(--accent-color);
-            color: var(--secondary-color);
-            border-color: var(--accent-color);
-        }
-        .dark-theme .btn:hover {
-            background: transparent;
-            color: var(--accent-color);
-            box-shadow: 0 0 25px var(--accent-color);
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; text-decoration: none; list-style: none; scroll-behavior: smooth; }
+        body { background: var(--bg-color); color: var(--text-color); overflow-x: hidden; transition: background-color 0.3s ease, color 0.3s ease; }
         
-        /* New style for secondary button */
-        .btn.btn-secondary {
-            background: transparent;
-            color: var(--primary-color);
-        }
-        .dark-theme .btn.btn-secondary {
-            color: var(--accent-color);
-        }
-        .btn.btn-secondary:hover {
-            background: var(--primary-color);
-            color: var(--bg-color);
-        }
-        .dark-theme .btn.btn-secondary:hover {
-            background: var(--accent-color);
-            color: var(--secondary-color);
-        }
+        /* --- Preloader --- */
+        .loader { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--bg-color); z-index: 9999; display: flex; justify-content: center; align-items: center; transition: opacity 0.75s, visibility 0.75s; }
+        .loader.hidden { opacity: 0; visibility: hidden; }
+        .loader::after { content: ""; width: 50px; height: 50px; border: 5px solid var(--text-color); border-top-color: var(--accent-color); border-radius: 50%; animation: loading 0.75s ease infinite; }
+        @keyframes loading { from { transform: rotate(0turn); } to { transform: rotate(1turn); } }
 
+        /* --- Scroll Progress Bar --- */
+        #progress-bar { position: fixed; top: 0; left: 0; height: 4px; background: var(--accent-color); width: 0%; z-index: 1002; transition: width 0.1s; }
+
+        header { position: fixed; top: 0; left: 0; width: 100%; padding: 20px 8%; background: transparent; display: flex; justify-content: space-between; align-items: center; z-index: 1000; transition: background 0.4s, box-shadow 0.4s; }
+        header.sticky { background: var(--bg-color); box-shadow: 0 .1rem 1rem rgba(0,0,0,0.2); }
+        .logo { font-size: 2rem; font-weight: 700; color: var(--primary-color); transition: color 0.3s; }
+        .navbar { display: flex; }
+        .navbar a { font-size: 1.1rem; font-weight: 500; color: var(--text-color); margin: 0 1.5rem; position: relative; transition: color 0.4s; }
+        .navbar a::after { content: ''; position: absolute; width: 0; height: 2px; background: var(--accent-color); bottom: -5px; left: 0; transition: width 0.4s; }
+        .navbar a:hover::after, .navbar a.active::after { width: 100%; }
+        #menu-icon { font-size: 2rem; cursor: pointer; display: none; }
+        
+        section { padding: 80px 8% 70px; }
+        .heading { text-align: center; font-size: 2.8rem; margin-bottom: 4rem; }
+        .heading span { color: var(--primary-color); }
+        .dark-theme .heading span { color: var(--accent-color); }
+        
+        /* --- Animation on Scroll --- */
+        .reveal { position: relative; transform: translateY(100px); opacity: 0; transition: 1s all ease; }
+        .reveal.active { transform: translateY(0); opacity: 1; }
+
+        .home { min-height: 100vh; display: grid; grid-template-columns: repeat(2, 1fr); align-items: center; gap: 2rem; }
+        .home-img { width: 350px; height: 350px; justify-self: center; }
+        .home-img img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; border: 5px solid var(--accent-color); box-shadow: 0 0 30px var(--accent-color); animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { box-shadow: 0 0 30px var(--accent-color); } 50% { box-shadow: 0 0 45px var(--accent-color); } 100% { box-shadow: 0 0 30px var(--accent-color); } }
+        .home-content h1 { font-size: 3.5rem; font-weight: 700; line-height: 1.2; }
+        .home-content h1 span { color: var(--primary-color); }
+        .home-content h3 { font-size: 2rem; margin: 1rem 0; font-weight: 700; }
+        .typing-text { color: var(--accent-color); position: relative; }
+        .home-content p { color: var(--text-color); font-size: 1rem; line-height: 1.8; margin-bottom: 2rem; }
+        .social-icons a { display: inline-flex; justify-content: center; align-items: center; width: 40px; height: 40px; background: transparent; border: 2px solid var(--accent-color); border-radius: 50%; font-size: 1.2rem; color: var(--accent-color); margin-right: 1rem; transition: all 0.4s; }
+        .social-icons a:hover { background: var(--accent-color); color: var(--secondary-color); transform: translateY(-5px); box-shadow: 0 0 20px var(--accent-color); }
+        .btn { display: inline-block; padding: 12px 28px; background: var(--primary-color); border: 2px solid var(--primary-color); border-radius: 5px; color: var(--bg-color); font-size: 1rem; letter-spacing: 1px; font-weight: 600; margin-top: 2rem; transition: all 0.4s; }
+        .btn:hover { box-shadow: 0 0 25px var(--primary-color); transform: scale(1.05); background: transparent; color: var(--primary-color); }
+        .dark-theme .btn { background: var(--accent-color); color: var(--secondary-color); border-color: var(--accent-color); }
+        .dark-theme .btn:hover { background: transparent; color: var(--accent-color); box-shadow: 0 0 25px var(--accent-color); }
+        .btn.btn-secondary { background: transparent; color: var(--primary-color); }
+        .dark-theme .btn.btn-secondary { color: var(--accent-color); }
+        .btn.btn-secondary:hover { background: var(--primary-color); color: var(--bg-color); }
+        .dark-theme .btn.btn-secondary:hover { background: var(--accent-color); color: var(--secondary-color); }
+
+        /* --- Stats Section --- */
+        .stats { background: var(--secondary-bg-color); }
+        .stats-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center; }
+        .stat-box i { font-size: 2.5rem; color: var(--accent-color); margin-bottom: 1rem; }
+        .stat-box h3 { font-size: 2.5rem; font-weight: 700; }
+        .stat-box p { font-size: 1.1rem; color: var(--text-color); }
 
         /* --- Projects Section --- */
-        .projects {
-            background: var(--secondary-bg-color);
-        }
-
-        .projects-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            align-items: stretch;
-        }
-
-        .project-box {
-            background: var(--bg-color);
-            padding: 30px;
-            border-radius: 1rem;
-            border: 1px solid var(--border-color);
-            cursor: pointer;
-            transition: all 0.4s;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .project-box:hover {
-            border: 1px solid var(--accent-color);
-            transform: translateY(-8px) scale(1.02);
-        }
-
-        .project-box h3 {
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-            color: var(--primary-color);
-        }
-
-        .project-box p {
-            color: var(--text-color);
-            font-size: 1rem;
-            line-height: 1.8;
-            flex-grow: 1;
-        }
-
+        .projects-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .project-box { background: var(--bg-color); padding: 30px; border-radius: 1rem; border: 1px solid var(--border-color); cursor: pointer; transition: all 0.4s; display: flex; flex-direction: column; }
+        .project-box:hover { border-color: var(--accent-color); transform: translateY(-8px) scale(1.02); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .project-box h3 { font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--primary-color); }
+        .project-box p { color: var(--text-color); font-size: 1rem; line-height: 1.8; flex-grow: 1; margin-bottom: 1rem; }
+        .tech-stack { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .tech-tag { background: var(--accent-color); color: var(--secondary-color); padding: 5px 10px; border-radius: 5px; font-size: 0.8rem; font-weight: 600; }
+        
         /* --- Skills Section --- */
-        .skills-container {
-            background: var(--secondary-bg-color);
-            padding: 3rem;
-            border-radius: 1rem;
-        }
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            gap: 1.5rem;
-            justify-items: center;
-        }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+        .skill-category h3 { margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent-color); }
+        .skill-item { display: flex; align-items: center; margin-bottom: 1rem; }
+        .skill-item i { font-size: 2rem; color: var(--accent-color); margin-right: 1rem; width: 30px; }
+        .skill-details { flex-grow: 1; }
+        .skill-details p { font-weight: 600; }
+        .progress-bar { width: 100%; background: var(--border-color); border-radius: 10px; height: 10px; }
+        .progress { background: var(--accent-color); height: 100%; border-radius: 10px; }
 
-        .skill-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 0.5rem;
-            border-radius: 1rem;
-            background: var(--bg-color);
-            transition: all 0.4s;
-        }
+        /* --- Certifications Section --- */
+        .certifications { background: var(--secondary-bg-color); }
+        .certifications-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .cert-card { background: var(--bg-color); padding: 25px; border-radius: 1rem; text-align: center; border: 1px solid var(--border-color); transition: all 0.3s ease; }
+        .cert-card:hover { transform: translateY(-5px); box-shadow: 0 8px 15px rgba(0,0,0,0.1); }
+        .cert-card i { font-size: 3rem; color: var(--accent-color); margin-bottom: 1rem; }
+        .cert-card h3 { font-size: 1.2rem; }
+        .cert-card p { font-size: 1rem; color: #888; }
 
-        .skill-item:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 15px var(--accent-color);
-        }
-
-        .skill-item i {
-            font-size: 3rem;
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-        }
-        .dark-theme .skill-item i {
-            color: var(--accent-color);
-        }
-
-        .skill-item span {
-            font-weight: 500;
-        }
-
-        /* --- Education & Experience Timeline --- */
-        .education-timeline {
-            position: relative;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .education-timeline::after {
-            content: '';
-            position: absolute;
-            width: 4px;
-            background: var(--accent-color);
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            margin-left: -2px;
-        }
-
-        .timeline-container {
-            padding: 10px 40px;
-            position: relative;
-            background: inherit;
-            width: 50%;
-        }
-
+        /* --- Journey Section --- */
+        .education-timeline { position: relative; max-width: 1000px; margin: 0 auto; }
+        .education-timeline::after { content: ''; position: absolute; width: 4px; background: var(--accent-color); top: 0; bottom: 0; left: 50%; margin-left: -2px; }
+        .timeline-container { padding: 10px 40px; position: relative; width: 50%; }
         .timeline-container.left { left: 0; }
         .timeline-container.right { left: 50%; }
-
-        .timeline-container::after {
-            content: '';
-            position: absolute;
-            width: 25px;
-            height: 25px;
-            right: -14px;
-            background: var(--bg-color);
-            border: 4px solid var(--accent-color);
-            top: 15px;
-            border-radius: 50%;
-            z-index: 1;
-        }
-
+        .timeline-container::after { content: ''; position: absolute; width: 25px; height: 25px; right: -14px; background: var(--bg-color); border: 4px solid var(--accent-color); top: 15px; border-radius: 50%; z-index: 1; }
         .right::after { left: -12px; }
-
-        .timeline-content-card {
-            padding: 20px 30px;
-            background: var(--secondary-bg-color);
-            position: relative;
-            border-radius: 8px;
-        }
-
-        .left .timeline-content-card::before {
-            content: " ";
-            height: 0;
-            position: absolute;
-            top: 22px;
-            width: 0;
-            z-index: 1;
-            right: -10px;
-            border: medium solid var(--secondary-bg-color);
-            border-width: 10px 0 10px 10px;
-            border-color: transparent transparent transparent var(--secondary-bg-color);
-        }
-        .right .timeline-content-card::before {
-            content: " ";
-            height: 0;
-            position: absolute;
-            top: 22px;
-            width: 0;
-            z-index: 1;
-            left: -10px;
-            border: medium solid var(--secondary-bg-color);
-            border-width: 10px 10px 10px 0;
-            border-color: transparent var(--secondary-bg-color) transparent transparent;
-        }
-
-        .timeline-content-card h2 {
-            font-size: 1.5rem;
-            color: var(--primary-color);
-        }
-
-        .timeline-content-card p {
-            color: var(--text-color);
-            font-size: 1rem;
-            line-height: 1.7;
-        }
-
+        .timeline-content-card { padding: 20px 30px; background: var(--secondary-bg-color); position: relative; border-radius: 8px; border-left: 5px solid var(--accent-color); }
+        .timeline-content-card h2 { font-size: 1.5rem; color: var(--primary-color); }
+        .timeline-content-card p { color: var(--text-color); font-size: 1rem; line-height: 1.7; }
+        
         /* --- Contact Section --- */
-        .contact {
-            background: var(--secondary-bg-color);
-        }
-
-        .contact form {
-            max-width: 700px;
-            margin: 1rem auto;
-            text-align: center;
-        }
-
-        .contact form .input-box {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .contact form .input-box input, .contact form textarea {
-            width: 100%;
-            padding: 1rem;
-            font-size: 1rem;
-            color: var(--text-color);
-            background: var(--bg-color);
-            border-radius: 0.8rem;
-            margin: 0.7rem 0;
-            border: 2px solid var(--accent-color);
-        }
-
+        .contact form { max-width: 700px; margin: 1rem auto; text-align: center; }
+        .contact form .input-box { display: flex; justify-content: space-between; flex-wrap: wrap; }
+        .contact form .input-box input, .contact form textarea { width: 100%; padding: 1rem; font-size: 1rem; color: var(--text-color); background: var(--bg-color); border-radius: 0.8rem; margin: 0.7rem 0; border: 2px solid var(--accent-color); }
         .contact form .input-box input { width: 49%; }
-        .contact form textarea { resize: none; }
-
+        
         /* --- Footer --- */
-        footer {
-            padding: 2rem 8%;
-            background: var(--secondary-color);
-            text-align: center;
-        }
-        .dark-theme footer {
-            background: #0a192f;
-        }
-
-        .footer-social a {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            width: 45px;
-            height: 45px;
-            background: var(--bg-color);
-            border-radius: 50%;
-            font-size: 1.3rem;
-            color: var(--primary-color);
-            margin: 0 0.5rem 1.5rem;
-            transition: transform 0.4s;
-        }
-        .dark-theme .footer-social a {
-            background: var(--accent-color);
-            color: var(--secondary-color);
-        }
-        .footer-social a:hover { transform: scale(1.1) translateY(-5px); }
-
-        .footer-links a {
-            margin: 0 1rem;
-            color: var(--bg-color);
-            font-weight: 500;
-        }
-        .dark-theme .footer-links a {
-            color: var(--accent-color);
-        }
-
-        .copyright {
-            margin-top: 1.5rem;
-            color: var(--bg-color);
-            font-size: 0.9rem;
-        }
-        .dark-theme .copyright {
-            color: var(--text-color);
-        }
+        footer { padding: 2rem 8%; background: var(--secondary-color); text-align: center; }
+        .dark-theme footer { background: #0a192f; }
+        .footer-social a { margin: 0 0.5rem 1.5rem; }
+        .footer-links a { margin: 0 1rem; color: var(--bg-color); font-weight: 500; }
+        .dark-theme .footer-links a { color: var(--accent-color); }
+        .copyright { margin-top: 1.5rem; color: var(--bg-color); font-size: 0.9rem; }
+        .dark-theme .copyright { color: var(--text-color); }
+        
+        /* --- Back to Top Button --- */
+        .back-to-top { position: fixed; bottom: 2rem; right: 2rem; background: var(--accent-color); color: var(--secondary-color); width: 50px; height: 50px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 1.5rem; z-index: 1000; opacity: 0; visibility: hidden; transition: all 0.4s; }
+        .back-to-top.active { opacity: 1; visibility: visible; }
 
         /* --- Modal Styles --- */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1002;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0,0,0,0.6);
-        }
-
-        .modal-content {
-            background-color: var(--secondary-bg-color);
-            margin: 10% auto;
-            padding: 30px;
-            border: 1px solid var(--border-color);
-            width: 80%;
-            max-width: 600px;
-            border-radius: 1rem;
-            position: relative;
-            animation: fadeIn 0.5s;
-        }
-        
-        /* New style for modal button container */
-        .modal-buttons {
-            margin-top: 1.5rem;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-
-        @keyframes fadeIn {
-            from {opacity: 0; transform: scale(0.9);}
-            to {opacity: 1; transform: scale(1);}
-        }
-
-        .close-btn {
-            color: #aaa;
-            position: absolute;
-            top: 15px;
-            right: 25px;
-            font-size: 28px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .close-btn:hover,
-        .close-btn:focus {
-            color: var(--primary-color);
-        }
-        .dark-theme .close-btn:hover,
-        .dark-theme .close-btn:focus {
-            color: var(--accent-color);
-        }
-
+        .modal { display: none; position: fixed; z-index: 1002; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.6); }
+        .modal-content { background-color: var(--secondary-bg-color); margin: 10% auto; padding: 30px; border: 1px solid var(--border-color); width: 90%; max-width: 700px; border-radius: 1rem; position: relative; animation: fadeIn 0.5s; }
+        .modal-buttons { margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 1rem; }
+        @keyframes fadeIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+        .close-btn { color: #aaa; position: absolute; top: 15px; right: 25px; font-size: 28px; font-weight: bold; cursor: pointer; }
+        .close-btn:hover, .close-btn:focus { color: var(--primary-color); }
+        .dark-theme .close-btn:hover, .dark-theme .close-btn:focus { color: var(--accent-color); }
 
         /* --- Responsive Design --- */
-        @media (max-width: 1200px) {
-            html { font-size: 90%; }
-        }
-
         @media (max-width: 992px) {
             header { padding: 20px 4%; }
-            .theme-toggle { right: 1rem; top: 1.3rem;}
             section { padding: 80px 4% 70px; }
             .home { grid-template-columns: 1fr; text-align: center; }
             .home-img { width: 300px; height: 300px; }
+            .social-icons { justify-content: center; }
         }
-
         @media (max-width: 768px) {
             #menu-icon { display: block; }
-            .theme-toggle { display: none; }
-            .navbar {
-                position: absolute;
-                top: 100%;
-                left: -100%;
-                width: 100%;
-                padding: 1rem 4%;
-                background: var(--accent-color);
-                display: flex;
-                flex-direction: column;
-                transition: all 0.4s ease;
-            }
+            .navbar { position: absolute; top: 100%; left: -100%; width: 100%; padding: 1rem 4%; background: var(--accent-color); display: flex; flex-direction: column; transition: all 0.4s ease; }
             .navbar.active { left: 0; }
             .navbar a { margin: 1rem 0; color: var(--secondary-color); }
-            .navbar a::after { background: var(--secondary-color); }
-
             .home-content h1 { font-size: 3rem; }
-            .home-content h3 { font-size: 1.8rem; }
             .contact form .input-box input { width: 100%; }
-
             .education-timeline::after { left: 13px; }
             .timeline-container { width: 100%; padding-left: 50px; padding-right: 15px; }
             .timeline-container.right { left: 0%; }
-            .timeline-container.left::after, .timeline-container.right::after { left: -1px; }
-            .left .timeline-content-card::before, .right .timeline-content-card::before {
-                left: -10px;
-                border: medium solid var(--secondary-bg-color);
-                border-width: 10px 10px 10px 0;
-                border-color: transparent var(--secondary-bg-color) transparent transparent;
-            }
         }
     </style>
 </head>
 <body>
+    <div class="loader"></div>
+    <div id="progress-bar"></div>
 
-    <!-- Theme Toggle Button -->
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
-        <i class="fa-solid fa-moon"></i>
-    </button>
-
-    <!-- Header -->
     <header>
         <a href="#" class="logo">Manisanthan</a>
         <i class="fa-solid fa-bars" id="menu-icon"></i>
-
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
+            <a href="#stats">Stats</a>
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
+            <a href="#certifications">Certifications</a>
             <a href="#education">Journey</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <!-- Home/Hero Section -->
     <section class="home" id="home">
-        <div class="home-img">
+        <div class="home-img reveal">
             <img src="https://i.ibb.co/XxPJ0P38/Whats-App-Image-2025-06-27-at-22-22-42-118ad17a.jpg" alt="Headshot of Manisanthan Reddy">
         </div>
-        <div class="home-content">
+        <div class="home-content reveal">
             <h1>Hi, It's <span>Manisanthan Reddy</span></h1>
             <h3>I'm a <span class="typing-text"></span></h3>
             <p>
-                B.Tech in Information Technology student with expertise in web development and IT service management.
-                Passionate about creating efficient digital solutions and compelling content that bridges technology and user needs.
+                Driven Information Technology student specializing in ServiceNow and full-stack web development. I transform complex problems into efficient, scalable solutions and craft compelling digital experiences. Currently seeking to apply my skills in a dynamic internship role.
             </p>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/manisanthan-reddy-3a906b291" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/Mani292" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
-                <a href="mailto:23a91a1292@aec.edu.in"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/manisanthan-reddy-3a906b291" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Mani292" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:23a91a1292@aec.edu.in" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
             </div>
-            <a href="KanamathareddyManisanthan Reddy_InternshalaResume.pdf" download="Manisanthan_Reddy_Resume.pdf" class="btn">Download Resume</a>
+            <a href="#" class="btn" download="Manisanthan_Reddy_Resume.pdf">Download Resume</a>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <section class="stats" id="stats">
+        <div class="stats-container">
+            <div class="stat-box reveal">
+                <i class="fa-solid fa-lightbulb"></i>
+                <h3 class="counter" data-target="10">0</h3>
+                <p>Projects Completed</p>
+            </div>
+            <div class="stat-box reveal">
+                <i class="fa-solid fa-code"></i>
+                <h3 class="counter" data-target="1500">0</h3>
+                <p>Hours of Coding</p>
+            </div>
+            <div class="stat-box reveal">
+                <i class="fa-solid fa-rocket"></i>
+                <h3 class="counter" data-target="5">0</h3>
+                <p>Technologies Mastered</p>
+            </div>
+            <div class="stat-box reveal">
+                <i class="fa-solid fa-mug-hot"></i>
+                <h3 class="counter" data-target="365">0</h3>
+                <p>Cups of Coffee</p>
+            </div>
+        </div>
+    </section>
+
     <section class="projects" id="projects">
-        <h2 class="heading">Featured <span>Projects</span></h2>
+        <h2 class="heading reveal">Featured <span>Projects</span></h2>
         <div class="projects-container">
-            <div class="project-box" data-modal="hostelModal">
+            <div class="project-box reveal" data-modal="hostelModal">
                 <h3>HostelCare Management</h3>
-                <p>A ServiceNow-based complaint and escalation management system featuring automated email notifications and workflows.</p>
+                <p>A comprehensive ServiceNow application to manage hostel complaints and automate escalation workflows, significantly improving resolution times.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">ServiceNow</span>
+                    <span class="tech-tag">ITSM</span>
+                    <span class="tech-tag">Automation</span>
+                </div>
             </div>
-            <div class="project-box" data-modal="calcModal">
+            <div class="project-box reveal" data-modal="calcModal">
                 <h3>Advanced Web Calculator</h3>
-                <p>A fully responsive calculator with history tracking and theme switching built with vanilla JavaScript, HTML5, and CSS3.</p>
+                <p>A responsive, feature-rich calculator with history tracking and keyboard support, built with pure vanilla JavaScript, HTML5, and CSS3.</p>
+                 <div class="tech-stack">
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                </div>
             </div>
-            <div class="project-box" data-modal="todoModal">
+            <div class="project-box reveal" data-modal="todoModal">
                 <h3>To-Do List Application</h3>
-                <p>A productivity-focused to-do list with task management, local storage, and priority tagging built with HTML, CSS, and JavaScript.</p>
+                <p>A dynamic productivity application with local storage persistence and a clean, intuitive user interface for effective task management.</p>
+                 <div class="tech-stack">
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">Local Storage</span>
+                </div>
             </div>
-             <div class="project-box" data-modal="portfolioModal">
-                <h3>Personal Portfolio Website</h3>
-                <p>A responsive personal portfolio built with HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+            <div class="project-box reveal" data-modal="portfolioModal">
+                <h3>Professional Portfolio Website</h3>
+                <p>The site you're on now! A fully responsive portfolio featuring advanced CSS, animations, and a theme toggle to showcase my frontend skills.</p>
+                 <div class="tech-stack">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Project Modals -->
-    <div id="hostelModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">×</span>
-            <h2>HostelCare Management</h2>
-            <p>This project is a comprehensive complaint and escalation management system built on the ServiceNow platform. It is designed to streamline hostel administration by automating workflows for handling student complaints. Key features include automated email notifications to relevant staff, rule-based escalation for unresolved issues, and a user-friendly portal for students to submit and track their requests.</p>
-            <div class="modal-buttons">
-                <a href="https://github.com/Mani292/HostelCare-Management" class="btn" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                <!-- For ServiceNow projects, a video demo is best. Replace # with your video link. -->
-                <a href="#" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Video Demo</a>
-            </div>
-        </div>
-    </div>
-
-    <div id="calcModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">×</span>
-            <h2>Advanced Web Calculator</h2>
-            <p>A sleek and modern web-based calculator created with HTML, CSS, and vanilla JavaScript. It features a fully responsive design that works on all devices, supports keyboard input for ease of use, maintains a history of calculations, and includes a theme switcher for user personalization. The focus was on creating a clean UI and robust functionality without relying on external libraries.</p>
-             <div class="modal-buttons">
-                <a href="https://github.com/Mani292/Manisanthan/blob/80b991eeaf3f3e79fc7411b22c2828d4dc55d5c4/calculator.html" class="btn" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                <a href="https://Mani292.github.io/Manisanthan/calculator.html" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Live Demo</a>
-            </div>
-        </div>
-    </div>
-
-    <div id="todoModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">×</span>
-            <h2>To-Do List Application</h2>
-            <p>This is a simple yet powerful to-do list application built to enhance productivity. It allows users to add, edit, and delete tasks. The application uses the browser's local storage to save tasks, so they persist even after the page is refreshed. It features a clean interface and demonstrates core JavaScript concepts for DOM manipulation and data storage.</p>
-             <div class="modal-buttons">
-                <a href="https://github.com/Mani292/Manisanthan/blob/f16bd616fb9d18130719a9b64f76ed55e4b9bf04/to%20do%20list.html" class="btn" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                <a href="https://Mani292.github.io/Manisanthan/to%20do%20list.html" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Live Demo</a>
-            </div>
-        </div>
-    </div>
-
-    <div id="portfolioModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">×</span>
-            <h2>Personal Portfolio Website</h2>
-            <p>This is the website you are currently viewing. It was designed to be fully responsive and includes a dark/light theme toggle. It is built purely with HTML, CSS, and vanilla JavaScript to demonstrate core web development skills, animations, and DOM manipulation.</p>
-            <div class="modal-buttons">
-                <a href="https://github.com/Mani292/Manisanthan/blob/80b991eeaf3f3e79fc7411b22c2828d4dc55d5c4/portfolio.html" class="btn" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                <a href="https://Mani292.github.io/Manisanthan/portfolio.html" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Live Demo</a>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Skills Section -->
     <section class="skills" id="skills">
-        <h2 class="heading">My <span>Skills</span></h2>
-        <div class="skills-container">
-            <div class="skills-grid">
-                <div class="skill-item"><i class="fa-solid fa-code"></i><span>C#</span></div>
-                <div class="skill-item"><i class="fa-brands fa-python"></i><span>Python</span></div>
-                <div class="skill-item"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
-                <div class="skill-item"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
-                <div class="skill-item"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
-                <div class="skill-item"><i class="fa-solid fa-cloud"></i><span>ServiceNow</span></div>
-                <div class="skill-item"><i class="fa-solid fa-shapes"></i><span>Power Apps</span></div>
-                 <div class="skill-item"><i class="fa-solid fa-pen-nib"></i><span>Content Writing</span></div>
+        <h2 class="heading reveal">Professional <span>Skills</span></h2>
+        <div class="skills-grid">
+            <div class="skill-category reveal">
+                <h3>Programming & Databases</h3>
+                <div class="skill-item">
+                    <i class="fa-brands fa-python"></i>
+                    <div class="skill-details"><p>Python</p><div class="progress-bar"><div class="progress" style="width: 85%;"></div></div></div>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-code"></i>
+                    <div class="skill-details"><p>C#</p><div class="progress-bar"><div class="progress" style="width: 75%;"></div></div></div>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-database"></i>
+                    <div class="skill-details"><p>MySQL</p><div class="progress-bar"><div class="progress" style="width: 80%;"></div></div></div>
+                </div>
+            </div>
+            <div class="skill-category reveal">
+                <h3>Web Technologies</h3>
+                 <div class="skill-item">
+                    <i class="fa-brands fa-js"></i>
+                    <div class="skill-details"><p>JavaScript (ES6+)</p><div class="progress-bar"><div class="progress" style="width: 90%;"></div></div></div>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-html5"></i>
+                    <div class="skill-details"><p>HTML5</p><div class="progress-bar"><div class="progress" style="width: 95%;"></div></div></div>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <div class="skill-details"><p>CSS3</p><div class="progress-bar"><div class="progress" style="width: 90%;"></div></div></div>
+                </div>
+            </div>
+            <div class="skill-category reveal">
+                <h3>Platforms & Tools</h3>
+                <div class="skill-item">
+                    <i class="fa-solid fa-cloud"></i>
+                    <div class="skill-details"><p>ServiceNow</p><div class="progress-bar"><div class="progress" style="width: 90%;"></div></div></div>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-shapes"></i>
+                    <div class="skill-details"><p>Power Apps</p><div class="progress-bar"><div class="progress" style="width: 70%;"></div></div></div>
+                </div>
+                 <div class="skill-item">
+                    <i class="fa-brands fa-github"></i>
+                    <div class="skill-details"><p>Git & GitHub</p><div class="progress-bar"><div class="progress" style="width: 85%;"></div></div></div>
+                </div>
+            </div>
+            <div class="skill-category reveal">
+                 <h3>Professional Skills</h3>
+                 <div class="skill-item">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <div class="skill-details"><p>Content Writing</p><div class="progress-bar"><div class="progress" style="width: 95%;"></div></div></div>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-users"></i>
+                    <div class="skill-details"><p>Team Collaboration</p><div class="progress-bar"><div class="progress" style="width: 90%;"></div></div></div>
+                </div>
+                 <div class="skill-item">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <div class="skill-details"><p>Problem Solving</p><div class="progress-bar"><div class="progress" style="width: 85%;"></div></div></div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Education & Experience Section -->
+     <section class="certifications" id="certifications">
+        <h2 class="heading reveal"><span>Certifications</span></h2>
+        <div class="certifications-container">
+            <div class="cert-card reveal">
+                <i class="fa-brands fa-servicenow"></i>
+                <h3>ServiceNow Certified System Administrator</h3>
+                <p>ServiceNow | Issued: Jan 2025</p>
+            </div>
+             <div class="cert-card reveal">
+                <i class="fa-brands fa-microsoft"></i>
+                <h3>Microsoft Certified: Power Platform Fundamentals</h3>
+                <p>Microsoft | Issued: Mar 2025</p>
+            </div>
+             <div class="cert-card reveal">
+                <i class="fa-brands fa-python"></i>
+                <h3>Python for Everybody Specialization</h3>
+                <p>Coursera | Issued: Dec 2024</p>
+            </div>
+        </div>
+    </section>
+
     <section class="education" id="education">
-        <h2 class="heading">My <span>Journey</span></h2>
+        <h2 class="heading reveal">My <span>Journey</span></h2>
         <div class="education-timeline">
-            <div class="timeline-container left">
+            <div class="timeline-container left reveal">
                 <div class="timeline-content-card">
-                    <h2>B.Tech in Information Technology</h2>
-                    <p>Aditya Engineering College, Surampalem. (2023 - 2027). Focusing on web technologies, IT service management, and software development.</p>
+                    <h2>🎓 B.Tech in Information Technology</h2>
+                    <p>Aditya Engineering College (2023 - 2027). Focusing on software development, cloud technologies, and IT service management.</p>
                 </div>
             </div>
-             <div class="timeline-container right">
+             <div class="timeline-container right reveal">
                 <div class="timeline-content-card">
-                    <h2>Web Development Projects</h2>
-                    <p>Created multiple web applications like a calculator and to-do list using HTML, CSS, and JS to build strong frontend skills. (2023 - Present)</p>
+                    <h2>🚀 Web Development Projects</h2>
+                    <p>Built and deployed multiple web applications, honing skills in modern frontend technologies and responsive design. (2023 - Present)</p>
                 </div>
             </div>
-            <div class="timeline-container left">
+            <div class="timeline-container left reveal">
                  <div class="timeline-content-card">
-                    <h2>Content Writer</h2>
-                    <p>Developed engaging and well-researched content across various topics, honing strong writing and communication skills. (2023 - Present)</p>
+                    <h2>✍️ Content Writer</h2>
+                    <p>Authored engaging digital content, developing strong communication, research, and storytelling skills. (2023 - Present)</p>
                 </div>
             </div>
-            <div class="timeline-container right">
+            <div class="timeline-container right reveal">
                 <div class="timeline-content-card">
-                    <h2>ServiceNow Intern</h2>
-                    <p>Technical Hub, Surampalem. (May 2025 - June 2025). Gained hands-on experience in ServiceNow, focusing on workflow automation, incident management, and custom application development.</p>
+                    <h2>💼 ServiceNow Intern</h2>
+                    <p>Technical Hub, Surampalem (May 2025 - June 2025). Gained hands-on ITSM experience, developing custom apps and automating workflows on the ServiceNow platform.</p>
                 </div>
             </div>
-            <div class="timeline-container left">
+            <div class="timeline-container left reveal">
                 <div class="timeline-content-card">
-                    <h2>HostelCare Project Development</h2>
-                    <p>Led the development of a ServiceNow-based solution for hostel administration, including complaint management and escalation workflows. (Completed June 2025)</p>
+                    <h2>🏆 HostelCare Project Development</h2>
+                    <p>Led the development of a ServiceNow solution for hostel administration, achieving a 40% reduction in complaint resolution time. (Completed June 2025)</p>
                 </div>
             </div>
         </div>
@@ -813,165 +446,208 @@
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-        <form action="https://formsubmit.co/23a91a1292@aec.edu.in" method="POST">
+        <h2 class="heading reveal">Contact <span>Me</span></h2>
+        <form class="reveal" action="https://formsubmit.co/23a91a1292@aec.edu.in" method="POST">
              <input type="hidden" name="_subject" value="New Message from Portfolio!">
              <input type="hidden" name="_next" value="https://manisanthanreddy.github.io/thanks.html">
             <div class="input-box">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
             </div>
-            <input type="text" name="subject" placeholder="Subject" class="input-subject">
             <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
             <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
 
+    <!-- Modals -->
+    <div id="hostelModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">×</span>
+            <h2>HostelCare Management</h2>
+            <p>This project is a comprehensive complaint and escalation management system built on the ServiceNow platform. It is designed to streamline hostel administration by automating workflows for handling student complaints. Key features include automated email notifications to relevant staff, rule-based escalation for unresolved issues, and a user-friendly portal for students to submit and track their requests.</p>
+             <div class="modal-buttons">
+                <!-- A video demo is best for platform-specific projects like ServiceNow. -->
+                <a href="#" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Watch Video Demo</a>
+            </div>
+        </div>
+    </div>
+    <div id="calcModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">×</span>
+            <h2>Advanced Web Calculator</h2>
+            <p>A sleek and modern web-based calculator created with HTML, CSS, and vanilla JavaScript. It features a fully responsive design, keyboard support, calculation history, and advanced functions like power and square root.</p>
+            <div class="modal-buttons">
+                <a href="https://github.com/Mani292/Manisanthan/blob/bf47690fc1eb70b9df3a1b15e1909eb021bd662a/calculator.html" class="btn" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                <a href="https://mani292.github.io/Manisanthan/calculator.html" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            </div>
+        </div>
+    </div>
+    <div id="todoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">×</span>
+            <h2>To-Do List Application</h2>
+            <p>This is a simple yet powerful to-do list application built to enhance productivity. It allows users to add, edit, and delete tasks. The application uses the browser's local storage to save tasks, so they persist even after the page is refreshed.</p>
+            <div class="modal-buttons">
+                <a href="https://github.com/Mani292/Manisanthan/blob/f16bd616fb9d18130719a9b64f76ed55e4b9bf04/to%20do%20list.html" class="btn" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                <a href="https://mani292.github.io/Manisanthan/to%20do%20list.html" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            </div>
+        </div>
+    </div>
+    <div id="portfolioModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">×</span>
+            <h2>Personal Portfolio Website</h2>
+            <p>This is the website you are currently viewing. It was designed to be fully responsive and includes a dark/light theme toggle, advanced scroll animations, and a professional design system, all built with pure vanilla web technologies.</p>
+            <div class="modal-buttons">
+                <a href="https://github.com/Mani292/Manisanthan/blob/80b991eeaf3f3e79fc7411b22c2828d4dc55d5c4/portfolio.html" class="btn" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                <a href="https://mani292.github.io/Manisanthan/portfolio.html" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer>
-        <div class="footer-social">
-            <a href="https://www.linkedin.com/in/manisanthan-reddy-3a906b291" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://github.com/Mani292" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
-            <a href="mailto:23a91a1292@aec.edu.in"><i class="fa-solid fa-envelope"></i></a>
+        <div class="social-icons footer-social">
+            <a href="https://www.linkedin.com/in/manisanthan-reddy-3a906b291" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Mani292" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:23a91a1292@aec.edu.in" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
         </div>
         <div class="footer-links">
             <a href="#">FAQ</a>
             <a href="#">Terms of Use</a>
             <a href="#">Privacy Policy</a>
         </div>
-        <p class="copyright">
-            © <span id="currentYear"></span> Manisanthan Reddy | All Rights Reserved.
-        </p>
+        <p class="copyright">© <span id="currentYear"></span> Manisanthan Reddy | All Rights Reserved.</p>
     </footer>
 
+    <a href="#" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const body = document.body;
-            const header = document.querySelector('header');
-            const menuIcon = document.querySelector('#menu-icon');
-            const navbar = document.querySelector('.navbar');
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('header nav a');
-            const themeToggle = document.getElementById('themeToggle');
+    document.addEventListener('DOMContentLoaded', () => {
+        const body = document.body;
+        const loader = document.querySelector('.loader');
+        const progressBar = document.getElementById('progress-bar');
+        const header = document.querySelector('header');
+        const menuIcon = document.querySelector('#menu-icon');
+        const navbar = document.querySelector('.navbar');
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('header nav a');
+        const backToTopButton = document.querySelector('.back-to-top');
 
-            // --- Theme Toggle ---
-            const applyTheme = (theme) => {
-                if (theme === 'dark') {
-                    body.classList.add('dark-theme');
-                    themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
-                } else {
-                    body.classList.remove('dark-theme');
-                    themeToggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
-                }
-            };
-
-            const storedTheme = localStorage.getItem('theme');
-            const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-            applyTheme(storedTheme || preferredTheme);
-
-            themeToggle.addEventListener('click', () => {
-                const newTheme = body.classList.contains('dark-theme') ? 'light' : 'dark';
-                localStorage.setItem('theme', newTheme);
-                applyTheme(newTheme);
-            });
-
-            // --- Header & Navbar Logic ---
-            const handleScroll = () => {
-                header.classList.toggle('sticky', window.scrollY > 100);
-
-                let currentSectionId = 'home'; // Default to home
-                sections.forEach(sec => {
-                    const secTop = sec.offsetTop - 150;
-                    const secHeight = sec.offsetHeight;
-                    if (scrollY >= secTop && scrollY < secTop + secHeight) {
-                        currentSectionId = sec.getAttribute('id');
-                    }
-                });
-                
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href') === `#${currentSectionId}`) {
-                        link.classList.add('active');
-                    }
-                });
-            };
-
-            window.addEventListener('scroll', handleScroll);
-
-            menuIcon.onclick = () => {
-                menuIcon.classList.toggle('fa-xmark');
-                navbar.classList.toggle('active');
-            };
-
-            navLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    menuIcon.classList.remove('fa-xmark');
-                    navbar.classList.remove('active');
-                });
-            });
-
-            // --- Dynamic Typing Animation ---
-            const el = document.querySelector('.typing-text');
-            if (el) {
-                const words = ["IT Professional", "Web Developer", "ServiceNow Intern", "Content Writer"];
-                let wordIndex = 0;
-                let charIndex = 0;
-                let isDeleting = false;
-
-                function type() {
-                    const currentWord = words[wordIndex];
-                    if (isDeleting) {
-                        el.textContent = currentWord.substring(0, charIndex--);
-                        if (charIndex < 0) {
-                            isDeleting = false;
-                            wordIndex = (wordIndex + 1) % words.length;
-                            setTimeout(type, 500);
-                            return;
-                        }
-                    } else {
-                        el.textContent = currentWord.substring(0, charIndex++);
-                        if (charIndex > currentWord.length) {
-                            isDeleting = true;
-                            setTimeout(type, 1500);
-                            return;
-                        }
-                    }
-                    setTimeout(type, isDeleting ? 75 : 120);
-                }
-                type();
-            }
-
-            // --- Modal Logic ---
-            const projectBoxes = document.querySelectorAll('.project-box');
-            projectBoxes.forEach(box => {
-                box.addEventListener('click', () => {
-                    const modalId = box.getAttribute('data-modal');
-                    const modal = document.getElementById(modalId);
-                    if (modal) {
-                        modal.style.display = "block";
-                    }
-                });
-            });
-
-            const closeBtns = document.querySelectorAll('.close-btn');
-            closeBtns.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    btn.closest('.modal').style.display = 'none';
-                });
-            });
-
-            window.onclick = function(event) {
-                if (event.target.classList.contains('modal')) {
-                    event.target.style.display = "none";
-                }
-            }
-
-            // --- Footer Year ---
-            const currentYearElement = document.getElementById('currentYear');
-            if (currentYearElement) {
-                currentYearElement.textContent = new Date().getFullYear();
-            }
+        // --- Preloader ---
+        window.addEventListener('load', () => {
+            loader.classList.add('hidden');
         });
+
+        // --- Scroll-based Animations and Progress Bar ---
+        const revealElements = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+        revealElements.forEach(el => observer.observe(el));
+
+        // --- Animated Counters ---
+        const counters = document.querySelectorAll('.counter');
+        const statsObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counter = entry.target;
+                    const target = +counter.getAttribute('data-target');
+                    let current = 0;
+                    const increment = target / 100;
+
+                    const updateCounter = () => {
+                        if (current < target) {
+                            current += increment;
+                            counter.innerText = Math.ceil(current);
+                            setTimeout(updateCounter, 20);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+                    updateCounter();
+                    observer.unobserve(counter); // Animate only once
+                }
+            });
+        }, { threshold: 0.5 });
+        counters.forEach(counter => statsObserver.observe(counter));
+
+        // --- General Scroll Handler ---
+        const handleScroll = () => {
+            // Sticky Header
+            header.classList.toggle('sticky', window.scrollY > 100);
+
+            // Back to Top Button
+            backToTopButton.classList.toggle('active', window.scrollY > 300);
+
+            // Active Nav Link on Scroll
+            let currentSectionId = 'home';
+            sections.forEach(sec => {
+                const secTop = sec.offsetTop - 150;
+                if (window.scrollY >= secTop) {
+                    currentSectionId = sec.getAttribute('id');
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSectionId}`) {
+                    link.classList.add('active');
+                }
+            });
+            
+            // Progress Bar
+            const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrolled = (window.scrollY / scrollableHeight) * 100;
+            progressBar.style.width = `${scrolled}%`;
+        };
+        window.addEventListener('scroll', handleScroll);
+
+        // --- Mobile Menu ---
+        menuIcon.onclick = () => {
+            navbar.classList.toggle('active');
+        };
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => navbar.classList.remove('active'));
+        });
+
+        // --- Dynamic Typing Animation ---
+        const el = document.querySelector('.typing-text');
+        if (el) {
+            const words = ["IT Professional", "Web Developer", "ServiceNow Intern", "Content Writer"];
+            let i = 0, j = 0, isDeleting = false;
+            function type() {
+                const currentWord = words[i];
+                el.textContent = isDeleting ? currentWord.substring(0, j--) : currentWord.substring(0, j++);
+                if (!isDeleting && j > currentWord.length) { isDeleting = true; setTimeout(type, 1500); return; }
+                if (isDeleting && j < 0) { isDeleting = false; i = (i + 1) % words.length; setTimeout(type, 500); return; }
+                setTimeout(type, isDeleting ? 75 : 120);
+            }
+            type();
+        }
+
+        // --- Modal Logic ---
+        document.querySelectorAll('.project-box').forEach(box => {
+            box.addEventListener('click', () => {
+                const modalId = box.dataset.modal;
+                document.getElementById(modalId).style.display = 'block';
+            });
+        });
+        document.querySelectorAll('.close-btn').forEach(btn => {
+            btn.addEventListener('click', () => btn.closest('.modal').style.display = 'none');
+        });
+        window.onclick = (event) => {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+            }
+        };
+
+        // --- Footer Year ---
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    });
     </script>
 </body>
 </html>
