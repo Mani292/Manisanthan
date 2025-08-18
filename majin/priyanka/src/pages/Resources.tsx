@@ -66,6 +66,126 @@ export default function Resources() {
       downloads: 3200
     },
     {
+      id: 9,
+      title: "CodeWithHarry - Complete Web Development",
+      category: "videos",
+      description: "Complete web development course covering HTML, CSS, JavaScript, React, Node.js and more.",
+      link: "https://www.youtube.com/watch?v=6mbwJ2xhgzM",
+      tags: ["Web Development", "HTML", "CSS", "JavaScript", "React"],
+      rating: 4.8,
+      downloads: 2800
+    },
+    {
+      id: 10,
+      title: "Apna College - DSA Complete Course",
+      category: "videos",
+      description: "Comprehensive Data Structures and Algorithms course with Java implementations.",
+      link: "https://www.youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ",
+      tags: ["DSA", "Java", "Algorithms", "Data Structures"],
+      rating: 4.9,
+      downloads: 3500
+    },
+    {
+      id: 11,
+      title: "Kunal Kushwaha - Complete Java DSA Bootcamp",
+      category: "videos",
+      description: "Free comprehensive Java DSA bootcamp covering basics to advanced topics.",
+      link: "https://www.youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ",
+      tags: ["Java", "DSA", "Bootcamp", "Programming"],
+      rating: 4.9,
+      downloads: 4200
+    },
+    {
+      id: 12,
+      title: "Chai aur Code - JavaScript Series",
+      category: "videos",
+      description: "Complete JavaScript tutorial series from basics to advanced concepts.",
+      link: "https://www.youtube.com/playlist?list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37",
+      tags: ["JavaScript", "Programming", "Web Development"],
+      rating: 4.7,
+      downloads: 2100
+    },
+    {
+      id: 13,
+      title: "Love Babbar - Supreme Batch DSA",
+      category: "videos",
+      description: "Complete DSA course with C++ covering all important topics for placements.",
+      link: "https://www.youtube.com/playlist?list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA",
+      tags: ["DSA", "C++", "Placement", "Competitive Programming"],
+      rating: 4.8,
+      downloads: 3800
+    },
+    {
+      id: 14,
+      title: "Thapa Technical - MERN Stack",
+      category: "videos",
+      description: "Complete MERN Stack development course with real projects.",
+      link: "https://www.youtube.com/playlist?list=PLwGdqUZWnOp3aROg4wypcRhZqJG3ajZWJ",
+      tags: ["MERN", "MongoDB", "Express", "React", "Node.js"],
+      rating: 4.6,
+      downloads: 1900
+    },
+    {
+      id: 15,
+      title: "Gate Smashers - DBMS Complete Course",
+      category: "videos",
+      description: "Complete Database Management Systems course covering all GATE topics.",
+      link: "https://www.youtube.com/playlist?list=PLxCzCOWd7aiFAN6I8CuViBuCdJgiOkT2Y",
+      tags: ["DBMS", "Database", "SQL", "GATE"],
+      rating: 4.7,
+      downloads: 2300
+    },
+    {
+      id: 16,
+      title: "Jenny's Lectures - Operating Systems",
+      category: "videos",
+      description: "Complete Operating Systems course covering all fundamental concepts.",
+      link: "https://www.youtube.com/playlist?list=PLdo5W4Nhv31a5ucW_S1K3-x6ztBRD-PNa",
+      tags: ["Operating Systems", "OS", "Computer Science"],
+      rating: 4.8,
+      downloads: 2700
+    },
+    {
+      id: 17,
+      title: "Neso Academy - Computer Networks",
+      category: "videos",
+      description: "Comprehensive Computer Networks course covering all networking concepts.",
+      link: "https://www.youtube.com/playlist?list=PLBlnK6fEyqRgMCUAG0XRw78UA8qnv6jEx",
+      tags: ["Computer Networks", "Networking", "TCP/IP"],
+      rating: 4.6,
+      downloads: 1800
+    },
+    {
+      id: 18,
+      title: "Hitesh Choudhary - React JS",
+      category: "videos",
+      description: "Complete React.js course covering hooks, context API, and modern React patterns.",
+      link: "https://www.youtube.com/playlist?list=PLRAV69dS1uWQos1M1xP6LWN6C-lZvpkmq",
+      tags: ["React", "JavaScript", "Frontend", "Web Development"],
+      rating: 4.7,
+      downloads: 2400
+    },
+    {
+      id: 19,
+      title: "CodeHelp - System Design",
+      category: "videos",
+      description: "System Design fundamentals and interview preparation for software engineers.",
+      link: "https://www.youtube.com/playlist?list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA",
+      tags: ["System Design", "Interview", "Software Engineering"],
+      rating: 4.8,
+      downloads: 1600
+    },
+    {
+      id: 20,
+      title: "Pepcoding - Dynamic Programming",
+      category: "videos",
+      description: "Complete Dynamic Programming course with detailed problem-solving approach.",
+      link: "https://www.youtube.com/playlist?list=PL-Jc9J83PIiEZvXCn-c5UIBvfT8dA-8EG",
+      tags: ["Dynamic Programming", "DP", "Algorithms", "Problem Solving"],
+      rating: 4.9,
+      downloads: 2200
+    },
+    {
       id: 6,
       title: "Previous Year Question Papers",
       category: "papers",
