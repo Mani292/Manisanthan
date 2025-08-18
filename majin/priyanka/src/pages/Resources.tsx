@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import AdSense from "../components/AdSense";
 
 export default function Resources() {
   const [searchTerm, setSearchTerm] = useState("");
