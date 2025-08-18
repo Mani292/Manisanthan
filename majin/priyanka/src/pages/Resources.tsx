@@ -20,7 +20,7 @@ export default function Resources() {
       title: "Complete C Programming Notes",
       category: "notes",
       description: "Comprehensive notes covering all C programming concepts with examples and practice problems.",
-      link: "https://drive.google.com/...",
+      link: "#",
       tags: ["C Programming", "Semester 1", "Computer Science"],
       rating: 4.8,
       downloads: 1250
@@ -30,7 +30,7 @@ export default function Resources() {
       title: "Data Structures & Algorithms",
       category: "notes",
       description: "Complete DSA notes with implementation examples in C++ and Java.",
-      link: "https://drive.google.com/...",
+      link: "#",
       tags: ["DSA", "Semester 3", "Algorithms"],
       rating: 4.9,
       downloads: 2100
@@ -40,7 +40,7 @@ export default function Resources() {
       title: "Object-Oriented Programming",
       category: "notes",
       description: "OOP concepts with Java examples and design patterns.",
-      link: "https://drive.google.com/...",
+      link: "#",
       tags: ["OOP", "Java", "Semester 2"],
       rating: 4.7,
       downloads: 980
@@ -50,7 +50,7 @@ export default function Resources() {
       title: "Database Management Systems",
       category: "books",
       description: "Complete DBMS textbook with SQL queries and normalization examples.",
-      link: "https://drive.google.com/...",
+      link: "#",
       tags: ["DBMS", "SQL", "Semester 4"],
       rating: 4.6,
       downloads: 750
@@ -70,7 +70,7 @@ export default function Resources() {
       title: "Previous Year Question Papers",
       category: "papers",
       description: "Last 5 years question papers with solutions for all semesters.",
-      link: "https://drive.google.com/...",
+      link: "#",
       tags: ["Question Papers", "Solutions", "Exam Prep"],
       rating: 4.8,
       downloads: 1800
@@ -90,7 +90,7 @@ export default function Resources() {
       title: "Development Tools Collection",
       category: "tools",
       description: "Essential software and tools for development and coding.",
-      link: "https://drive.google.com/...",
+      link: "#",
       tags: ["Tools", "Software", "Development"],
       rating: 4.5,
       downloads: 650
