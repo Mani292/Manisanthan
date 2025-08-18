@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useTheme } from "../contexts/ThemeContext";
+import AdSense from "../components/AdSense";
 
 export default function Home() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -202,6 +203,22 @@ export default function Home() {
       {/* Stats Section */}
       <section className="py-16 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Ad Banner - Top of Stats */}
+          <div className="mb-8 flex justify-center">
+            <AdSense 
+              adSlot="1234567890"
+              adFormat="banner"
+              style={{ width: '728px', height: '90px' }}
+              className="hidden md:block"
+            />
+            <AdSense 
+              adSlot="1234567891"
+              adFormat="banner"
+              style={{ width: '320px', height: '50px' }}
+              className="block md:hidden"
+            />
+          </div>
+          
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {stats.map((stat, index) => (
               <div 
@@ -224,6 +241,15 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Sidebar Ad */}
+      <div className="fixed right-4 top-1/2 transform -translate-y-1/2 z-40 hidden xl:block">
+        <AdSense 
+          adSlot="1234567892"
+          adFormat="vertical"
+          style={{ width: '160px', height: '600px' }}
+        />
+      </div>
 
       {/* Interactive Features Section */}
       <section className="py-20">
