@@ -6,7 +6,7 @@ export default function Chatbot() {
   const [messages, setMessages] = useState([
     {
       id: 1,
-      text: "🚀 **SUPER AI ASSISTANT ACTIVATED!**\n\nI am your advanced AI companion with unlimited capabilities:\n\n🤖 **SUPER AI FEATURES:**\n• **Neural Learning** - Adapts to your learning style\n• **Code Analysis** - Advanced debugging & optimization\n• **Interview Simulation** - Real-time mock interviews\n• **Project Generation** - AI-powered project ideas\n• **Career Prediction** - Personalized career insights\n• **Tech Forecasting** - Future technology trends\n• **Problem Solving** - Complex algorithm solutions\n• **Study Optimization** - AI-driven study plans\n• **Real-time Code Review** - Instant feedback\n• **System Architecture Design** - Scalable solutions\n• **AI/ML Model Training** - Custom implementations\n• **Performance Optimization** - Advanced techniques\n\n💡 **Ask me ANYTHING about:**\n• Advanced programming concepts\n• System design & architecture\n• AI/ML implementations\n• Career strategy & planning\n• Technology deep dives\n• Complex problem solving\n• Real-time debugging\n• Performance optimization\n\n**I'm ready to supercharge your tech journey!** 🔥",
+      text: "👋 **Hi! I'm Claude, your AI learning companion!**\n\nI'm here to help you excel in your B.Tech journey with personalized guidance and support.\n\n🤖 **How I can help you:**\n• **Programming Help** - Debug code, explain concepts, write solutions\n• **Study Assistance** - Break down complex topics, create study plans\n• **Interview Prep** - Practice coding problems, system design questions\n• **Project Ideas** - Suggest projects, guide implementation\n• **Career Guidance** - Resume tips, skill roadmaps, industry insights\n• **Concept Clarification** - Explain algorithms, data structures, CS concepts\n• **Code Review** - Analyze your code, suggest improvements\n• **Learning Paths** - Personalized roadmaps for your goals\n\n💡 **Popular topics I help with:**\n• Data Structures & Algorithms\n• Web Development (Frontend/Backend)\n• System Design & Architecture\n• Machine Learning & AI\n• Database Design & SQL\n• Software Engineering Best Practices\n• Placement Preparation\n• Technical Writing & Documentation\n\n**Just ask me anything - I'm here to help you learn and grow!** 🚀",
       sender: 'bot',
       timestamp: new Date(),
       type: 'welcome'
@@ -28,7 +28,7 @@ export default function Chatbot() {
     scrollToBottom();
   }, [messages]);
 
-  const API_KEY = 'AIzaSyAL3QM_NCO0PF9NHURiTCHZb6aI45S3rJc';
+  // API integration would go here in a real implementation
 
   const superAISkills = [
     { id: 'neural', name: '🧠 Neural Learning', icon: '⚡', color: 'neon-blue', mode: 'expert' },
