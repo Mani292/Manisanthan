@@ -122,32 +122,32 @@ export default function About() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-24 h-24 bg-gradient-to-br from-indigo-400 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-white">P</span>
+                <span className="text-2xl font-bold text-white">TH</span>
               </div>
-                              <h3 className="text-lg font-semibold text-gray-900 mb-1">Tech Hub Team</h3>
-              <p className="text-indigo-600 text-sm mb-2">Founder & Lead Educator</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-1">Tech Hub Team</h3>
+              <p className="text-indigo-600 text-sm mb-2">Educational Platform Developers</p>
               <p className="text-gray-600 text-sm">
-                Passionate educator with 5+ years of experience in computer science education.
+                Dedicated team of educators and developers creating comprehensive B.Tech resources.
               </p>
             </div>
             <div className="text-center">
-              <div className="w-24 h-24 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-white">R</span>
+              <div className="w-24 h-24 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">🤖</span>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-1">Rahul Kumar</h3>
-              <p className="text-purple-600 text-sm mb-2">Technical Lead</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-1">Claude AI</h3>
+              <p className="text-blue-600 text-sm mb-2">AI Learning Assistant</p>
               <p className="text-gray-600 text-sm">
-                Senior software engineer with expertise in DSA and system design.
+                Advanced AI assistant providing personalized guidance, coding help, and career advice for B.Tech students.
               </p>
             </div>
             <div className="text-center">
-              <div className="w-24 h-24 bg-gradient-to-br from-pink-400 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-white">A</span>
+              <div className="w-24 h-24 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-white">CC</span>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-1">Amit Patel</h3>
-              <p className="text-pink-600 text-sm mb-2">Content Curator</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-1">Community Contributors</h3>
+              <p className="text-green-600 text-sm mb-2">Student & Alumni Network</p>
               <p className="text-gray-600 text-sm">
-                Expert in curating and organizing educational content for maximum impact.
+                Active community of students and professionals contributing resources and sharing experiences.
               </p>
             </div>
           </div>
@@ -158,20 +158,20 @@ export default function About() {
           <h2 className="text-2xl font-bold mb-6 text-center">Our Impact</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
-              <div className="text-3xl md:text-4xl font-bold mb-2">1000+</div>
-              <div className="text-indigo-100">Students Helped</div>
+              <div className="text-3xl md:text-4xl font-bold mb-2">5K+</div>
+              <div className="text-indigo-100">Students Reached</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold mb-2">500+</div>
-              <div className="text-indigo-100">Resources Created</div>
+              <div className="text-3xl md:text-4xl font-bold mb-2">300+</div>
+              <div className="text-indigo-100">Study Resources</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold mb-2">50+</div>
+              <div className="text-3xl md:text-4xl font-bold mb-2">150+</div>
               <div className="text-indigo-100">Companies Covered</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold mb-2">95%</div>
-              <div className="text-indigo-100">Success Rate</div>
+              <div className="text-3xl md:text-4xl font-bold mb-2">24/7</div>
+              <div className="text-indigo-100">AI Support</div>
             </div>
           </div>
         </div>

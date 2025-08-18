@@ -61,8 +61,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900">Email</h3>
-                  <p className="text-gray-600">priyanka@techhub.com</p>
-                  <p className="text-gray-600">support@techhub.com</p>
+                  <p className="text-gray-600">contact@techhub-learning.com</p>
+                  <p className="text-gray-600">support@techhub-learning.com</p>
                 </div>
               </div>
 
@@ -75,8 +75,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900">Phone</h3>
-                  <p className="text-gray-600">+91 98765 43210</p>
-                  <p className="text-gray-600">+91 87654 32109</p>
+                  <p className="text-gray-600">+1 (555) 123-4567</p>
+                  <p className="text-gray-600">+91 98765 12345</p>
                 </div>
               </div>
 
@@ -90,8 +90,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900">Location</h3>
-                  <p className="text-gray-600">Tech Hub Campus</p>
-                  <p className="text-gray-600">Bangalore, Karnataka, India</p>
+                  <p className="text-gray-600">Tech Hub Learning Center</p>
+                  <p className="text-gray-600">Global - Remote First Platform</p>
                 </div>
               </div>
 
