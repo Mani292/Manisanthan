@@ -22,8 +22,8 @@ export default function Dashboard() {
     { title: 'Contact Support', icon: '💬', link: '/contact', color: 'yellow' }
   ];
 
-  const getColorClasses = (color) => {
-    const colors = {
+  const getColorClasses = (color: string) => {
+    const colors: { [key: string]: string } = {
       indigo: 'bg-indigo-100 text-indigo-600 hover:bg-indigo-200',
       purple: 'bg-purple-100 text-purple-600 hover:bg-purple-200',
       pink: 'bg-pink-100 text-pink-600 hover:bg-pink-200',

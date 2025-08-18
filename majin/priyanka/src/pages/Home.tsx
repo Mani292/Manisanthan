@@ -1,14 +1,13 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { useTheme } from "../contexts/ThemeContext";
 
 export default function Home() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
   const [currentFeature, setCurrentFeature] = useState(0);
   const [currentStat, setCurrentStat] = useState(0);
-  const { isDark } = useTheme();
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     setIsVisible(true);
     
