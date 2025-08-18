@@ -186,6 +186,56 @@ export default function Resources() {
       downloads: 2200
     },
     {
+      id: 21,
+      title: "freeCodeCamp - Full Stack Development",
+      category: "videos",
+      description: "Complete full stack web development bootcamp with modern technologies.",
+      link: "https://www.youtube.com/c/Freecodecamp",
+      tags: ["Full Stack", "Web Development", "React", "Node.js", "MongoDB"],
+      rating: 4.9,
+      downloads: 5200
+    },
+    {
+      id: 22,
+      title: "Fireship - Modern JavaScript",
+      category: "videos",
+      description: "Advanced JavaScript concepts, ES6+, and modern web development techniques.",
+      link: "https://www.youtube.com/c/Fireship",
+      tags: ["JavaScript", "ES6", "Modern JS", "Web Development"],
+      rating: 4.8,
+      downloads: 3100
+    },
+    {
+      id: 23,
+      title: "Corey Schafer - Python Complete Series",
+      category: "videos",
+      description: "Comprehensive Python tutorials from basics to advanced web frameworks.",
+      link: "https://www.youtube.com/c/Coreyms",
+      tags: ["Python", "Django", "Flask", "Programming"],
+      rating: 4.9,
+      downloads: 4800
+    },
+    {
+      id: 24,
+      title: "The Net Ninja - Vue.js Course",
+      category: "videos",
+      description: "Complete Vue.js framework course with practical projects.",
+      link: "https://www.youtube.com/playlist?list=PL4cUxeGkcC9hYYGbV60Vq3IXYNfDk8At1",
+      tags: ["Vue.js", "JavaScript", "Frontend", "Web Development"],
+      rating: 4.7,
+      downloads: 2900
+    },
+    {
+      id: 25,
+      title: "Programming with Mosh - Angular Course",
+      category: "videos",
+      description: "Complete Angular framework course for building modern web applications.",
+      link: "https://www.youtube.com/watch?v=k5E2AVpwsko",
+      tags: ["Angular", "TypeScript", "Frontend", "Web Development"],
+      rating: 4.7,
+      downloads: 2600
+    },
+    {
       id: 6,
       title: "Previous Year Question Papers",
       category: "papers",
